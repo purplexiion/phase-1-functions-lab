@@ -3,7 +3,7 @@ describe('index.js', function() {
     it('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(43)).to.equal(1);
     });
-
+//functions ends here
     it('returns a distance in blocks', function() {
       expect(distanceFromHqInBlocks(50)).to.equal(8);
     });
@@ -12,7 +12,7 @@ describe('index.js', function() {
       expect(distanceFromHqInBlocks(34)).to.equal(8);
     });
   });
-
+//functions ends here
   describe('distanceFromHqInFeet()', function() {
     it('returns a distance in feet', function() {
       expect(distanceFromHqInFeet(43)).to.equal(264);
@@ -26,7 +26,7 @@ describe('index.js', function() {
       expect(distanceFromHqInFeet(34)).to.equal(2112);
     });
   });
-
+//functions ends here
   describe('distanceTravelledInFeet()', function() {
     it('returns the distance travelled in feet', function() {
       expect(distanceTravelledInFeet(43, 48)).to.equal(1320);
@@ -40,7 +40,7 @@ describe('index.js', function() {
       expect(distanceTravelledInFeet(34, 28)).to.equal(1584);
     });
   });
-
+//functions ends here
   describe('calculatesFarePrice(start, destination)', function() {
     it('gives customers a free sample', function() {
       expect(calculatesFarePrice(43, 44)).to.equal(0);
@@ -50,7 +50,7 @@ describe('index.js', function() {
       // total feet travelled is 528, minus the first 400 feet, comes to 128 -> 2.56
       expect(calculatesFarePrice(34, 32)).to.equal(2.56);
     });
-
+//functions ends here
     it('charges 25 dollars for a distance over 2000 feet', function() {
       expect(calculatesFarePrice(50, 58)).to.equal(25);
     });
